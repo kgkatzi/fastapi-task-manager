@@ -1,0 +1,9 @@
+Generic single-database configuration.
+
+Χρήσιμες εντολές (τρέχονται μέσα στο app container ή τοπικά με το ίδιο DATABASE_URL):
+
+    alembic upgrade head            # εφαρμόζει όλα τα migrations που λείπουν
+    alembic downgrade -1            # αναιρεί το τελευταίο migration
+    alembic current                 # δείχνει ποιο migration είναι εφαρμοσμένο ΤΩΡΑ
+    alembic history                 # δείχνει όλη την αλυσίδα migrations
+    alembic revision --autogenerate -m "μήνυμα"   # παράγει νέο migration συγκρίνοντας models <-> DB
